@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+header {
+    background-image: url("./starsBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    height: 65vh;
+    color: #fdfdfd;
+    text-align: center;
+}
+.homeLogo {
+    text-decoration: none;
+    color: #5bb02e;
+    font-size: 20px;
+    font-family: 'Lucida Handwriting';
+    padding: 0 70px 0 40px;
+}
+.menuItems > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fdfdfd;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menuItems {
+    display: inline;
+    word-spacing: 10px;
+}
+nav {
+    padding: 20px 10px;
+}
+.burgerButton {
+    display: none;
+}
+h1 {
+    margin: 100px 0 40px 0 ;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.success {
+    color: #5bb02e;
+}
+header > p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 80px;
+    font-size: 20px;
+    margin: 0 0 40px 0 ;
+}
+.greenButton {
+    border-radius: 3px;
+    border: none;
+    color: #fdfdfd;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #5bb02e;
+    padding: 13px 30px;
+}
+.whiteButton {
+    border-radius: 3px;
+    border: none;
+    color: #868686;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 13px 30px;
+}
+i {
+    background-color: #5bb02e;
+    color: #fdfdfd;
+    font-size: 35px;
+    padding: 15px;
+}
+.footerH1 {
+    text-transform: uppercase;
+    font-family: 'Arial Narrow';
+    font-size: 14px;
+}
+.footerP {
+    font-family: 'Arial Narrow';
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 30px 60px;
+    text-align: center;
+}
+@media (max-width: 1024px) {
+    .menuItems {
+        word-spacing: 20px;
+        line-height: 30px;
+    }
+    .menuItems > a {
+        font-size: 18px;
+    }
+    h1 {
+        margin: 60px 0 40px 0 ;
+        padding: 0 15px;
+        font-size: 40px;
+    }
+    footer {
+        padding: 30px 15px;
+        text-align: center;
+    }
+}
+@media (max-width: 840px) {
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .burgerButton {
+        height: 30px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 15px;
+        justify-content: right;
+    }
+    .burgerButton > div {
+        height: 4px;
+        width: 40px;
+        background-color: #5bb02e;
+        margin: 0 30px;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+    .menuItems {
+        display: none;
+    }
+}
+@media (max-width: 490px) {
+    header > p {
+        padding: 0 25px;
+        font-size: 18px;
+        margin: 0 0 30px 0 ;
+    }
+    h1 {
+        margin: 30px 0 25px 0 ;
+        font-size: 35px;
+    }
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .buttons {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px 0;
+        justify-items: center;
+    }
+    .greenButton {
+        width: 150px;
+    }
+    .homeLogo {
+        padding: 0 0 0 15px;
+        text-align: start;
+    }
+}
+@media (max-width: 380px) {
+    .burgerButton > div {
+        height: 4px;
+        width: 40px;
+        background-color: #5bb02e;
+        margin: 0 15px;
+    }
+}
